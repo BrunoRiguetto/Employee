@@ -14,23 +14,23 @@ public class Program {
 		
 		Employee emp = new Employee();
 		
-		System.out.print("Name: ");
+		System.out.print("Nome: ");
 		emp.name = sc.nextLine();
-		System.out.print("Gross Salary: ");
+		System.out.print("Salario bruto: ");
 		emp.grossSalary = sc.nextDouble();
-		System.out.print("Tax: ");
+		System.out.print("Desconto de salário: ");
 		emp.tax = sc.nextDouble();
 		
 		System.out.println();
-		System.out.println("Employee: " + emp);
+		System.out.println("Empregado: " + emp);
 		System.out.println();
 		
-		System.out.print("Which percentage to increase salary? ");
+		System.out.print("Quantos porcento de aumento de salário? ");
 		double percentage = sc.nextDouble();
 		emp.increaseSalary(percentage);
 		
 		System.out.println();
-		System.out.println("Update data: " + emp);
+		System.out.println("Atualização: " + emp);
 		
 		sc.close();
 	}
